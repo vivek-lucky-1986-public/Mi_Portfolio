@@ -3,45 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset and global styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f7fc;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
         header {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
         }
-        .content {
-            padding: 20px;
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
         }
+
+        header p {
+            font-size: 1.25rem;
+        }
+
+        section {
+            padding: 50px 20px;
+            margin: 20px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #646464;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #005bb5;
+        }
+
         footer {
+            text-align: center;
+            padding: 20px;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Github Portfolio of VIVEK SHAH</h1>
+        <h1>Your Name</h1>
+        <p>Web Developer | Frontend Enthusiast | Problem Solver</p>
     </header>
-    <div class="content">
-        <h2>Welcome to My Portfolio!</h2>
-        <p>Here you'll find information about the projects I've worked on, my skills, and how to contact me.</p>
-        <!-- Add more sections here such as projects, about me, etc. -->
-    </div>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm [Your Name], a passionate web developer with a strong background in building responsive and interactive websites and web applications. I specialize in frontend development using technologies like HTML, CSS, JavaScript, React, and more.
+        </p>
+        <p>
+            My goal is to create intuitive, user-friendly websites and applications that make a real impact. I am constantly learning and staying up to date with the latest trends and technologies in web development.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Laravel React - Task Manager App</h3>
+                <p>A brief description of the project goes here. A web application or website you developed.</p>
+                <a href="https://github.com/your-username/project-one" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to collaborate, feel free to reach out! I'd love to connect.</p>
+        <div class="contact-form">
+            <form action="mailto:viveklucky1848@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 VIVEK SHAH</p>
+        <p>© 2024 Your Name - Web Developer | <a href="mailto:youremail@example.com" style="color: white;">youremail@example.com</a></p>
     </footer>
 </body>
 </html>
+
