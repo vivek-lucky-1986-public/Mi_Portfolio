@@ -196,3 +196,23 @@ footer {
         margin-top: 20px;
     }
 }
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    color: #646464;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* This will center the text */
+}
